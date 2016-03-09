@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Reviews</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Expert name</th>
+      <th>Review</th>
+      <th>Rating</th>
+      <th>Wine</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reviews.each do |review| %>
+      <tr>
+        <td><%= review.expert_name %></td>
+        <td><%= review.review %></td>
+        <td><%= review.rating %></td>
+        <td><%= review.wine %></td>
+        <!-- /wines/:wine_id/reviews/:id -->
+        <td><%= link_to 'Show', [review.wine, review] %></td>
+        <!-- /wines/:wine_id/reviews/:id -->
+        <td><%= link_to 'Edit', edit_review_path(review.wine, review) %></td>
+        <!-- /wines/:wine_id/reviews/:id -->
+        <td><%= link_to 'Destroy', [review.wine, review], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Review', new_wine_review_path %>

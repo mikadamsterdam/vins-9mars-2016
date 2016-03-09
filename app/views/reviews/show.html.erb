@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Expert name:</strong>
+  <%= @review.expert_name %>
+</p>
+
+<p>
+  <strong>Review:</strong>
+  <%= @review.review %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @review.rating %>
+</p>
+
+<p>
+  <strong>Wine:</strong>
+  <%= @review.wine %>
+</p>
+
+<!-- /wines/:wine_id/reviews/:id -->
+<%= link_to 'Edit', edit_wine_review_path(@review.wine ,@review ) %> |
+<!-- /wines/:wine_id/reviews/:id -->
+<%= link_to 'Back', wine_reviews_path %>

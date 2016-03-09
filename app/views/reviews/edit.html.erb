@@ -1,0 +1,8 @@
+<h1>Editing Review</h1>
+
+<%= render 'form' %>
+
+<!-- /wines/:wine_id/reviews/:id -->
+<%= link_to 'Show', [@review.wine, @review] %>
+<!-- /wines/:wine_id/reviews/:id -->
+<%= link_to 'Back', wine_reviews_path(@review.wine) %>
