@@ -44,24 +44,21 @@ group :development, :test do
   # gem 'carrierwave'
   # gem 'libnotify'
 
-  gem 'byebug'
-  gem 'spring-commands-rspec'
   gem 'rspec-rails'
-  gem 'guard-rspec'
-  gem 'terminal-notifier-guard'
-  gem 'rb-fsevent'
   gem 'shoulda-matchers'
-  #  gem 'factory_girl_rails'
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  # Spring speeds up development keeping your application running in the background. Read more: https://github.com/rails/spring
-  # gem 'spring'
-  #  gem 'rspec'
-  #  gem 'guard'
-  #  gem 'guard-bundler'
-  gem 'carrierwave'
-  gem 'devise'
-  #  gem 'cancancan'
 end
+
+#  gem 'factory_girl_rails'
+# Access an IRB console on exception pages or by using <%= console %> in views
+# Spring speeds up development keeping your application running in the background. Read more: https://github.com/rails/spring
+# gem 'spring'
+#  gem 'rspec'
+#  gem 'guard'
+#  gem 'guard-bundler'
+# gem 'carrierwave'
+# gem 'devise'
+#  gem 'cancancan'
+# end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
@@ -72,13 +69,20 @@ group :development do
   #  gem 'spring-commands-rspec'
   #  gem 'rb-fsevent'
   #  gem 'terminal-notifier-guard'
+
+  gem 'spring'
+  gem 'guard-rspec'
+  gem 'spring-commands-rspec'
+  gem 'rb-fsevent'
+  gem 'terminal-notifier-guard'
+
   gem 'seed_dump'
   gem 'web-console'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   #  gem 'seed_dump'
-  gem 'rails_db'
 end
 gem 'rack-cors', require: 'rack/cors'
 gem 'puma'
 gem 'rails_12factor'
+gem 'rails_db'

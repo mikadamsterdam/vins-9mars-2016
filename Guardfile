@@ -39,7 +39,7 @@ end
 # guard :rspec, cmd: 'spring rspec -f doc'
 # guard :rspec, cmd: 'bundle exec rspec'
 
-guard :rspec, cmd: 'bundle exec rspec' do
+guard :rspec, cmd: 'spring rspec' do
   require 'guard/rspec/dsl'
   dsl = Guard::RSpec::Dsl.new(self)
 
