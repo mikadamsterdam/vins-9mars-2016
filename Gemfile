@@ -75,6 +75,7 @@ group :development do
   gem 'spring-commands-rspec'
   gem 'rb-fsevent'
   gem 'terminal-notifier-guard'
+  #gem 'factory_girl_rails'
 
   gem 'seed_dump'
   gem 'web-console'
