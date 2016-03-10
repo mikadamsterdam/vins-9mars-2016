@@ -33,31 +33,52 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
-  gem 'spring'
-  gem 'factory_girl_rails'
-  gem 'rspec-rails'
-  gem 'respec'
-  gem 'shoulda-matchers'
-  gem 'guard'
-  gem 'guard-rspec'
-  gem 'guard-bundler'
-  gem 'spring-commands-rspec'
-  gem 'rb-fsevent'
-  gem 'terminal-notifier-guard'
-  gem 'rspec'
-  gem 'carrierwave'
+  # gem 'byebug'
+  # gem 'rspec-rails'
+  # gem 'shoulda-matchers'
+  # gem 'factory_girl_rails'
+  # gem 'respec'
+  # gem 'guard'
+  # gem 'guard-bundler'
+  # gem 'rspec'
+  # gem 'carrierwave'
+  # gem 'libnotify'
 
+  gem 'byebug'
+  gem 'spring-commands-rspec'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'terminal-notifier-guard'
+  gem 'rb-fsevent'
+  gem 'shoulda-matchers'
+  #  gem 'factory_girl_rails'
+  # Access an IRB console on exception pages or by using <%= console %> in views
+  # Spring speeds up development keeping your application running in the background. Read more: https://github.com/rails/spring
+  # gem 'spring'
+  #  gem 'rspec'
+  #  gem 'guard'
+  #  gem 'guard-bundler'
+  gem 'carrierwave'
+  gem 'devise'
+  #  gem 'cancancan'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
-
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  #  gem 'web-console', '~> 2.0'
+  #  gem 'spring-watcher-listen'
+  #  gem 'spring'
+  #  gem 'guard-rspec'
+  #  gem 'spring-commands-rspec'
+  #  gem 'rb-fsevent'
+  #  gem 'terminal-notifier-guard'
   gem 'seed_dump'
-  gem 'rails_db'
+  gem 'web-console'
 
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  #  gem 'seed_dump'
+  gem 'rails_db'
 end
 gem 'rack-cors', require: 'rack/cors'
 gem 'puma'
+gem 'rails_12factor'
