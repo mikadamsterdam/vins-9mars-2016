@@ -75,9 +75,9 @@ group :development do
   gem 'spring-commands-rspec'
   gem 'rb-fsevent'
   gem 'terminal-notifier-guard'
-
+  gem 'rails_db'
   gem 'seed_dump'
-  gem 'web-console'
+
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   #  gem 'seed_dump'
@@ -85,4 +85,3 @@ end
 gem 'rack-cors', require: 'rack/cors'
 gem 'puma'
 gem 'rails_12factor'
-gem 'rails_db'
