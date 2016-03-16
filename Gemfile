@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.2.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use postgresql as the database for Active Record
@@ -46,6 +46,9 @@ group :development, :test do
 
   gem 'rspec-rails'
   gem 'shoulda-matchers'
+  gem 'spring'
+  gem 'guard-rspec'
+  gem 'spring-commands-rspec'
 end
 
 #  gem 'factory_girl_rails'
@@ -70,18 +73,16 @@ group :development do
   #  gem 'rb-fsevent'
   #  gem 'terminal-notifier-guard'
 
-  gem 'spring'
-  gem 'guard-rspec'
-  gem 'spring-commands-rspec'
-  gem 'rb-fsevent'
+
+
   gem 'terminal-notifier-guard'
-  gem 'rails_db'
   gem 'seed_dump'
 
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   #  gem 'seed_dump'
 end
+gem 'rb-fsevent'
 gem 'rack-cors', require: 'rack/cors'
 gem 'puma'
 gem 'rails_12factor'
