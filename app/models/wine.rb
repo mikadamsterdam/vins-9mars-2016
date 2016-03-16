@@ -1,6 +1,6 @@
 class Wine < ActiveRecord::Base
   has_many :reviews, dependent: :destroy
-  validates :wine_name, :wine_description, :wine_origin, presence:true
+  # validates :wine_name, :wine_description, :wine_origin, presence:true
 end
 
 
